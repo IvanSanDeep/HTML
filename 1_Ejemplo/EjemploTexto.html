@@ -1,5 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<!DOCTYPE html>
 <!--fsdfsdf-->
 
 <head>
@@ -7,12 +6,16 @@
   <link rel="stylesheet" type="text/css" href="/css/ejemplo.css" />
   <link rel="shortcut icon" href="/favicon.ico" type="image/ico" />  
   <link rel="alternate" type="application/rss+xml" title="Resumen de todos los artículos del blog" href="/feed.xml" />
-
+<!--Meta son los metafatos que va indexar el documento-->
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="description" content="Ejemplo de XHTML y HTML5"/>
-  <meta name="keywords" content="HTML5, HTML, XHTML"/>
+  <meta name="description" content="Ejemplo de HTML5"/>
+  <meta name="keywords" content="HTML5, HTML"/>
   <meta name="author" content="Dannas"/>
-  
+  <!--OpenGraph Se utiliza para las redes sociales-->
+  <meta property="og:type" content="Estructura de Texto"/>
+  <meta property="og:description" content="Ejemplo HTML5"/>
+
+  <!--JavaScript dar les vida que son los "script"-->
   <script type="text/javascript">
     //<![CDATA[
       window.onload = function() { alert("La página se ha cargado exitosamente :)"); }
@@ -26,11 +29,16 @@
   <p>La página que estás viendo requiere para su funcionamiento el uso de JavaScript.
 Si lo has deshabilitado intencionadamente, por favor vuelve a activarlo :)</p>
 </noscript>
-<img src="logotipo.gif" alt="Logotipo de esta página" />
+<img src="imagen.gif" alt="Logotipo de esta página" />
+<!--Ruta relativa de imagenes..//2_HTML5/images-->
 <ul>
-    <li><a href="#">Inicio</a></li>
-    <li><a href="ftp://ftp.ejemplo.com/ruta/archivo.zip" title="Archivo comprimido de los contenidos">Descarga un ZIP</a></li> 
-    <li><a href="mailto:nombre@direccion.com?subject=Solicitud de más información">Solicitar Información</a></li>
+    <li>
+      <a href="#">Inicio</a><!--Esta es un anlcla hace referencia al documento-->
+    </li>
+    <li>
+      <a href="ftp://ftp.ejemplo.com/ruta/archivo.zip" title="Archivo comprimido de los contenidos">Descarga un ZIP</a></li> 
+    <li>
+      <a href="mailto:nombre@direccion.com?subject=Solicitud de más información">Solicitar Información</a></li>
   </ul>
 <hr/>
 <h2>Lenguajes de marcado.</h2>
@@ -41,26 +49,35 @@ Si lo has deshabilitado intencionadamente, por favor vuelve a activarlo :)</p>
   <dt>XML</dt>
   <dd>Lenguaje basado en SGML y que se emplea para describir datos</dd>
  
-  <dt>RSS</dt>
-  <dt>GML</dt>
-  <dt>XHTML</dt>
-  <dt>SVG</dt>
-  <dt>XUL</dt>
+  <dt>RSS</dt><dd>Se utiliza para crear archivos que contienen infomación de una pagina web con las utlimas actualizaciones que se han hecho en ella</dd>
+  <dt>GML</dt><dd>Es un archivo generado por algunos sitiso web que contiene una versión especifica de la información publicada en esa web</dd>
+  <dt>XHTML</dt><dd>Se utliza para marcar contenido como texto, imagenes y enlaces en forma de hipervinculos para crear una cierta estrctura para que puedea ser mostrada por los navegadores</dd>
+  <dt>SVG</dt><dd>Scalable Vector Graphics son un formato de graficos vectoriales bidimensionales. Esto significa que la imgagen  se adapta al tamaño, de forma que al ampliar  o reducir se muestra uniforme</dd>
+  <dt>XUL</dt><dd>Es posible crear una interfaz usando un lenguaje de marcado definir  la apariencia de esta interfacz con hojas de estilo CSS y usar javascript para manipular su comportamiento</dd>
   <dd>Lenguajes derivados de XML para determinadas aplicaciones</dd>
 </dl>
 <hr/>
 
 <h2>HTML</h2>
 
-<p>El lenguaje <acronym title="HyperText Markup Language"><strong><em>HTML</em></strong></acronym> es estandarizado 
-por el <acronym title="World Wide Web Consortium"><strong><em>W3C</em></strong></acronym>.</p>
+<p>El lenguaje <acronym title="HyperText Markup Language">
+    <!--<b>Bold </b>-->
+    <strong>
+      <!--<i> Italica <i/>-->
+      <em>HTML</em>
+    </strong></acronym> es estandarizado 
+  por el <acronym title="World Wide Web Consortium"><strong><em>W3C</em></strong></acronym>.</p>
 
 <h3>HTML 5</h3>
-<p><acronym title="HyperText Markup Language, versión 5"><strong><em>HTML5</em></strong></acronym> es la quinta revisión importante del lenguaje básico de la World Wide Web, HTML. HTML5 especifica dos variantes de sintaxis para HTML: un <em>«clásico»</em> HTML (text/html), la variante conocida como HTML5 y una variante XHTML conocida como sintaxis XHTML5 que deberá ser servida como XML.Esta es la primera vez que HTML y XHTML se han desarrollado en paralelo.</p>
+<p><acronym title="HyperText Markup Language, versión 5">
+  <strong>
+    <em>HTML5</em>
+  </strong></acronym> es la quinta revisión importante del lenguaje básico de la World Wide Web, HTML. HTML5 especifica dos variantes de sintaxis para HTML: un <em>«clásico»</em> HTML (text/html), la variante conocida como HTML5 y una variante XHTML conocida como sintaxis XHTML5 que deberá ser servida como XML.Esta es la primera vez que HTML y XHTML se han desarrollado en paralelo.</p>
 
+<!--code para utlizar ciertos codigos-->
 <p><code>&lt;section&gt;,&lt;nav&gt;,&lt;article&gt;,&lt;aside&gt;,&lt;footer&gt;,&lt;video&gt;,&lt;audio&gt;, entre otros.</code></p>
 
-<table align="center" border="3">
+<table >
 <caption>Caractéres especiales</caption>
 <thead>
 <tr>
@@ -155,7 +172,7 @@ El éxito de las .com dependía de webs más dinámicas (a veces llamadas Web 1.
 <img src="imagen.gif" usemap="#mapa_zonas" /> 
 <map name="mapa_zonas">
   <area shape="rect" coords="20,25,84,113" href="#" />
-  <area shape="polygon" coords="90,25,162,26,163,96,89,25,90,24" href="#" />
+  <area shape="poly" coords="90,25,162,26,163,96,89,25,90,24" href="#" />
   <area shape="circle" coords="130,114,29" href="#" />
   <area shape="rect" coords="19,156,170,211" href="#" />
   <area shape="default" nohref="nohref" />
@@ -213,7 +230,7 @@ El éxito de las .com dependía de webs más dinámicas (a veces llamadas Web 1.
     <option value="Other">Otro</option>
   </optgroup>
   <optgroup label="Navegadores">
-    <option value="Internet Explorer" selected="selected">Internet Explorer</option>
+    <option value="Internet Explorer" >Internet Explorer</option>
     <option value="Firefox">Firefox</option>
     <option value="Safari">Safari</option>
     <option value="Opera">Opera</option>
